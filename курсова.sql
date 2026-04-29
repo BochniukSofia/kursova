@@ -3,7 +3,7 @@ CREATE DATABASE SeteraExpress;
 USE SeteraExpress;
 
 -- 2. Таблиця Автобусів (Fleet)
---  Вся інформація про транспорт і того, хто його надає, тут.
+--  Вся інформація про транспорт і того, хто його надає
 CREATE TABLE Bus (
     BusID INT AUTO_INCREMENT PRIMARY KEY,
     Model VARCHAR(100) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE Route (
 );
 
 -- 5. Таблиця Рейсів (Trip)
--- Тут ми додали поле AvailableSeats, щоб миттєво показувати кількість вільних місць.
+-- Добавив поле AvailableSeats, щоб миттєво показувати кількість вільних місць
 CREATE TABLE Trip (
     TripID INT AUTO_INCREMENT PRIMARY KEY,
     RouteID INT NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE Trip (
 );
 
 -- 6. Таблиця Бронювань (Booking)
--- Оскільки ми видалили таблицю Seat, ми просто вказуємо номер місця (SeatNumber) тут.
+-- Номер місця вказується тут (SeatNumber) 
 CREATE TABLE Booking (
     BookingID INT AUTO_INCREMENT PRIMARY KEY,
     TripID INT NOT NULL,
