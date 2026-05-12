@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вибір місця – Setera Express</title>
+  <link rel="icon" type="image/png" href="Prozoro.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="seats">
+  <header class="main-header">
+    <a href="index.html" class="logo-link">
+      <img src="Settera Header.png" alt="Setera Express Header" class="imgHeader">
+    </a>
+    <nav class="nav_button">
+      <span class="number">☎️ +38 (063) 323 28 21</span>
+      <a class="button" href="#">Контактна інформація</a>
+      <a class="button" href="register.html">Вхід / Реєстрація</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="seats-header">
+      <h2 id="trip-title">Вибір місця</h2>
+      <p class="trip-subtitle" id="trip-subtitle"></p>
+    </section>
+
+    <section class="seats-section">
+      <div class="seats-legend">
+        <span class="legend-item"><span class="seat seat-free legend-square"></span> Вільне місце</span>
+        <span class="legend-item"><span class="seat seat-booked legend-square"></span> Зайняте місце</span>
+      </div>
+
+      <div id="seats-grid" class="seats-grid">
+        <!-- JS домалює місця -->
+      </div>
+
+      <p id="seat-message" class="seat-message"></p>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <span>© 2025 Setera Express. Усі права захищено.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
